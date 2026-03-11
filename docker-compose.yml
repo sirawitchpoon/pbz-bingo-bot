@@ -1,0 +1,16 @@
+services:
+  discord-bot:
+    # สร้าง Image จาก Dockerfile ในโฟลเดอร์ปัจจุบัน
+    build: .
+
+    # ตั้งชื่อ Container ให้จำง่าย
+    container_name: my_image_bot
+
+    # โหลดค่าตัวแปรจากไฟล์ .env เข้าไปใน Container
+    env_file:
+      - .env
+
+    # สำคัญ! ถ้าบอท error หรือโปรแกรมดับ ให้รันใหม่ทันที (Auto-restart)
+    restart: unless-stopped
+    volumes:
+      - ./bingo_data.db:/app/bingo_data.db

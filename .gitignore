@@ -1,0 +1,7 @@
+# .gitignore
+.env
+__pycache__/
+*.pyc
+venv/
+.DS_Store
+bingo_data.db
