@@ -1,11 +1,21 @@
-# Bingo Bot
-
-> **Bingo Prediction event bot for the Phantom Blade Zero community.**  
-> Users submit prediction images via private tickets; submissions are forwarded to an admin channel.
+<p align="center">
+  <strong>Bingo Bot</strong>
+</p>
+<p align="center">
+  <em>Bingo Prediction event bot for the Phantom Blade Zero community.</em>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python" alt="Python" />
+  <img src="https://img.shields.io/badge/discord.py-2.x-5865F2?logo=discord" alt="discord.py" />
+  <img src="https://img.shields.io/badge/license-ISC-green" alt="License" />
+  <img src="https://img.shields.io/badge/Phantom%20Blade%20Zero-PBZ%20Ecosystem-8b0000" alt="PBZ" />
+</p>
 
 ---
 
-## Overview
+Users submit prediction images via private tickets; submissions are forwarded to an admin channel. One button, one temporary channel per user.
+
+## 📋 Overview
 
 | | |
 |---|---|
@@ -13,11 +23,9 @@
 | **Role** | Event submission (ticket-style, image forwarding) |
 | **Stack** | Python 3.10+, discord.py, SQLite |
 
-When a Bingo Prediction event is active, users click a **Submit Prediction** button. A private temporary channel is created for them; they upload their image, confirm, and the image is forwarded to an admin-only channel. The temporary channel is deleted after submission or after 10 minutes of inactivity.
-
 ---
 
-## Features
+## ✨ Features
 
 - **Event setup** — Admins use `/setup_bingo event_name:"..."` to post the submission button.
 - **Ticket system** — One private temporary channel per user per event.
@@ -27,7 +35,7 @@ When a Bingo Prediction event is active, users click a **Submit Prediction** but
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
 # .env: DISCORD_TOKEN, DISCORD_APP_ID, TARGET_CHANNEL_ID
@@ -38,7 +46,7 @@ SQLite (`bingo_data.db`) is bind-mounted; data persists across restarts.
 
 ---
 
-## Commands
+## 📜 Commands
 
 | Command | Who | Description |
 |---------|-----|--------------|
@@ -46,13 +54,13 @@ SQLite (`bingo_data.db`) is bind-mounted; data persists across restarts.
 
 ---
 
-## Permissions
+## 🔐 Permissions
 
-Bot role must be **above** user/admin roles in Server Settings → Roles. Category needs: Manage Channels, Manage Permissions. Target channel needs: View Channel, Send Messages, Attach Files, Embed Links.
+Bot role must be **above** user/admin roles in **Server Settings** → **Roles**. Category needs: **Manage Channels**, **Manage Permissions**. Target channel needs: **View Channel**, **Send Messages**, **Attach Files**, **Embed Links**.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 Bingo-bot/
@@ -65,6 +73,6 @@ Bingo-bot/
 
 ---
 
-## License
+## 📄 License
 
-ISC
+ISC · Part of the **Phantom Blade Zero** community ecosystem.
