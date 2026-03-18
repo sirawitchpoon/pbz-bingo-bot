@@ -14,3 +14,10 @@ services:
     restart: unless-stopped
     volumes:
       - ./bingo_data.db:/app/bingo_data.db
+    networks:
+      - honor-points-network
+
+networks:
+  honor-points-network:
+    external: true
+    name: honor-points-service_honor-points-network
