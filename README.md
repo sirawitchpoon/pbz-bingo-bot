@@ -73,6 +73,12 @@ Bingo-bot/
 
 ---
 
+## 🔗 Ecosystem
+
+Other PBZ stacks include **honor-points-service**, **honorbot-pbz**, **Shadow Duel** ([`wuxia-bobozan`](../wuxia-bobozan)), **pbz-dashboard**, etc. Overview: [`docs/README.md`](../docs/README.md).
+
+---
+
 ## 📄 License
 
 ISC · Part of the **Phantom Blade Zero** community ecosystem.
